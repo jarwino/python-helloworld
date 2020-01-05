@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python3 helloworld.py'
+                sh 'ls -lah'
+                sh 'echo "wassup 3rd step"'
             }
         }
     }
