@@ -4,6 +4,6 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
-    prin("hello, my world!")
+    print("hello, my world!")
 
     return 0
