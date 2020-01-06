@@ -10,4 +10,7 @@ pipeline {
             }
         }
     }
+    always {
+        archiveArtifacts artifacts: 'README', fingerprint: true
+    }
 }
