@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'python3 helloworld.py'
                 sh 'ls -lah'
+                sh 'p'
                 sh 'echo "wassup 3rd step"'
             }
         }
