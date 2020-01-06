@@ -10,7 +10,9 @@ pipeline {
             }
         }
     }
-    always {
+    post {
+      always {
         archiveArtifacts artifacts: 'README', fingerprint: true
+      }
     }
 }
