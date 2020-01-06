@@ -11,8 +11,11 @@ pipeline {
         }
     }
     post {
-      always {
-        archiveArtifacts artifacts: 'README', fingerprint: true
-      }
+        always {
+          archiveArtifacts artifacts: 'README', fingerprint: true
+          mail to: 'jarwino@gmail.com',
+              subject: "Finished Pipeline",
+              body: "ayy lmao test"
+        }
     }
 }
